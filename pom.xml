@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.zxytech.jurest</groupId>
+  <artifactId>jurest-parent</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <name>JuRest API Test</name>
+  <description>基于 (Ju)ni5 + All(ure) + (Rest) Assured 实现接口测试</description>
+  <url>https://github.com/stornado/jurest</url>
+
+  <modules>
+    <module>jurest-archetype</module>
+    <module>jurest-bom</module>
+    <module>jurest</module>
+    <module>jurest-util</module>
+  </modules>
+
+  <developers>
+    <developer>
+      <id>stornado</id>
+      <name>仲夏叶</name>
+      <email>ryan@zxytech.com</email>
+      <timezone>Asia/Shanghai</timezone>
+    </developer>
+  </developers>
+
+  <licenses>
+    <license>
+      <name>Apache License 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
+  <distributionManagement>
+    <repository>
+      <id>github</id>
+      <name>GitHub Packages</name>
+      <url>https://maven.pkg.github.com/stornado/jurest</url>
+    </repository>
+  </distributionManagement>
+
+</project>

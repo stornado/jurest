@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<archetype-descriptor
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+name="An Archetype for JuRest API test framework"
+  xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0" xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0 http://maven.apache.org/xsd/archetype-descriptor-1.0.0.xsd">
+
+  <fileSets>
+    <fileSet encoding="UTF-8" filtered="true" packaged="true">
+      <directory>src/test/java</directory>
+    </fileSet>
+    <fileSet encoding="UTF-8" filtered="false" packaged="false">
+      <directory>src/test/resources</directory>
+      <include>allure.properties</include>
+      <include>junit-platform.properties</include>
+    </fileSet>
+    <fileSet encoding="UTF-8" filtered="false" packaged="false">
+      <directory>.mvn</directory>
+      <include>maven-wrapper.jar</include>
+      <include>maven-wrapper.properties</include>
+      <include>MavenWrapperDownloader.java</include>
+    </fileSet>
+    <fileSet encoding="UTF-8" filtered="false" packaged="false">
+      <directory></directory>
+      <includes>
+        <include>__editorconfig__</include>
+        <include>__gitignore__</include>
+        <include>__dockerignore__</include>
+        <include>Dockerfile</include>
+        <include>settings.xml</include>
+        <include>pom.xml</include>
+        <include>HELP.md</include>
+        <include>mvnw</include>
+        <include>mvnw.cmd</include>
+      </includes>
+    </fileSet>
+    <fileSet encoding="UTF-8" filtered="true" packaged="false">
+      <directory></directory>
+      <includes>
+        <include>README.md</include>
+        <include>pom.xml</include>
+      </includes>
+    </fileSet>
+  </fileSets>
+
+  <requiredProperties>
+    <requiredProperty key="groupId">
+      <defaultValue>com.zxytech.jurest.cases</defaultValue>
+    </requiredProperty>
+    <requiredProperty key="artifactId">
+      <defaultValue>jurest-api-test</defaultValue>
+    </requiredProperty>
+    <requiredProperty key="version">
+      <defaultValue>1.0-SNAPSHOT</defaultValue>
+    </requiredProperty>
+    <requiredProperty key="editorconfig">
+      <defaultValue>.editorconfig</defaultValue>
+    </requiredProperty>
+    <requiredProperty key="gitignore">
+      <defaultValue>.gitignore</defaultValue>
+    </requiredProperty>
+    <requiredProperty key="dockerignore">
+      <defaultValue>.dockerignore</defaultValue>
+    </requiredProperty>
+  </requiredProperties>
+</archetype-descriptor>
