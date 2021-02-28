@@ -353,7 +353,7 @@ nbdist/
 ### Jurest
 HELP.md
 .classpath
-!.mvn/wrapper/maven-wrapper.jar
+!**/.mvn/wrapper/maven-wrapper.jar
 
 # Allure
 **/.allure/
