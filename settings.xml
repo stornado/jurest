@@ -110,6 +110,17 @@
             <enabled>true</enabled>
           </snapshots>
         </repository>
+        <repository>
+          <id>github</id>
+          <name>GitHub Packages</name>
+          <url>https://maven.pkg.github.com/stornado/jurest</url>
+          <releases>
+            <enabled>true</enabled>
+          </releases>
+          <snapshots>
+            <enabled>true</enabled>
+          </snapshots>
+        </repository>
       </repositories>
     </profile>
   </profiles>
