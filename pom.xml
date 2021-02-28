@@ -18,6 +18,8 @@
     <module>jurest-bom</module>
     <module>jurest</module>
     <module>jurest-util</module>
+
+    <module>jurest-modules-archetype</module>
   </modules>
 
   <developers>
