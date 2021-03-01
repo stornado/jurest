@@ -119,7 +119,7 @@
           </propertiesFilePath>
           <servePort>9000</servePort>
           <allureDownloadUrl>
-            https://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline/${allure.version}/allure-commandline-${allure.version}.zip
+            https://maven.aliyun.com/repository/public/io/qameta/allure/allure-commandline/${allure.version}/allure-commandline-${allure.version}.zip
           </allureDownloadUrl>
         </configuration>
       </plugin>
@@ -227,7 +227,7 @@
           </propertiesFilePath>
           <servePort>9000</servePort>
           <allureDownloadUrl>
-            https://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline/${allure.version}/allure-commandline-${allure.version}.zip
+            https://maven.aliyun.com/repository/public/io/qameta/allure/allure-commandline/${allure.version}/allure-commandline-${allure.version}.zip
           </allureDownloadUrl>
         </configuration>
       </plugin>
