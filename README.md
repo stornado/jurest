@@ -5,7 +5,12 @@
 ```bash
 ./mvnw clean install
 
-./mvnw archetype:generate -DarchetypeCatalog=local -DartifactId=jurest-examples -DgroupId=com.zxytech.jurest.examples
+./mvnw archetype:generate \
+    -DarchetypeCatalog=local \
+    -DarchetypeGroupId=com.zxytech.jurest \
+    -DarchetypeArtifactId=jurest-modules-archetype \
+    -DartifactId=jurest-examples \
+    -DgroupId=com.zxytech.jurest.examples
 ```
 
 ## Example
