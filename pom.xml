@@ -47,4 +47,10 @@
     </repository>
   </distributionManagement>
 
+  <scm>
+    <connection>scm:git:git://github.com/stornado/jurest.git</connection>
+    <developerConnection>scm:git:ssh://github.com:stornado/jurest.git</developerConnection>
+    <url>https://github.com/stornado/jurest/tree/main</url>
+  </scm>
+
 </project>
