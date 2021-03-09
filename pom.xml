@@ -46,9 +46,9 @@
       <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
     </repository>
     <snapshotRepository>
-      <id>nexus</id>
-      <name>Sonatype Nexus Snapshots</name>
-      <url>https://s01.oss.sonatype.org/content/repositories/snapshots/</url>
+      <id>github</id>
+      <name>GitHub Packages</name>
+      <url>https://maven.pkg.github.com/stornado/jurest</url>
     </snapshotRepository>
   </distributionManagement>
 

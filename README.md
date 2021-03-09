@@ -4,7 +4,7 @@
 
 ```bash
 mvn archetype:generate \
-    -DarchetypeCatalog=local \
+    -DarchetypeCatalog=remote \
     -DarchetypeGroupId=com.zxytech.jurest \
     -DarchetypeArtifactId=jurest-modules-archetype \
     -DartifactId=jurest-examples \
