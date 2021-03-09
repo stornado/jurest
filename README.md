@@ -3,9 +3,7 @@
 # JuRest
 
 ```bash
-./mvnw clean install
-
-./mvnw archetype:generate \
+mvn archetype:generate \
     -DarchetypeCatalog=local \
     -DarchetypeGroupId=com.zxytech.jurest \
     -DarchetypeArtifactId=jurest-modules-archetype \
