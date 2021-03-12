@@ -3,8 +3,12 @@
 # JuRest
 
 ```bash
+cp archetype-catalog.xml ~/.m2/repository/archetype-catalog.xml
+cp settings.xml ~/.m2
+```
+
+```bash
 mvn archetype:generate \
-    -DarchetypeCatalog=remote \
     -DarchetypeGroupId=com.zxytech.jurest \
     -DarchetypeArtifactId=jurest-modules-archetype \
     -DartifactId=jurest-examples \

@@ -351,7 +351,7 @@ nbdist/
 
 
 ### Jurest
-HELP.md
+# HELP.md
 .classpath
 !**/.mvn/wrapper/maven-wrapper.jar
 
