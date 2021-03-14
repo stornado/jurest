@@ -3,22 +3,38 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.1.0 https://maven.apache.org/xsd/settings-1.1.0.xsd">
 
+  <!-- https://issues.sonatype.org/browse/OSSRH-65498 -->
+  <!-- https://central.sonatype.org/pages/ossrh-guide.html#deployment -->
+  <!-- https://central.sonatype.org/pages/working-with-pgp-signatures.html -->
+  <!-- https://central.sonatype.org/pages/apache-maven.html -->
   <servers>
     <server>
-      <id>nexus</id>
+      <id>ossrh</id>
       <username>stornado</username>
-      <password>${nexus.password}</password>
+      <password>${ossrh.password}</password>
     </server>
   </servers>
 
   <profiles>
     <profile>
-      <id>nexus</id>
+      <id>ossrh</id>
       <properties>
-        <altDeploymentRepository>nexus::default::https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</altDeploymentRepository>
+        <altDeploymentRepository>ossrh::default::https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</altDeploymentRepository>
       </properties>
       <build>
         <plugins>
+          <plugin>
+            <groupId>org.sonatype.plugins</groupId>
+            <artifactId>nexus-staging-maven-plugin</artifactId>
+            <version>1.6.7</version>
+            <extensions>true</extensions>
+            <configuration>
+              <serverId>ossrh</serverId>
+              <nexusUrl>https://s01.oss.sonatype.org/</nexusUrl>
+              <autoReleaseAfterClose>true</autoReleaseAfterClose>
+            </configuration>
+          </plugin>
+
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-gpg-plugin</artifactId>
@@ -29,6 +45,7 @@
             </configuration>
             <executions>
               <execution>
+                <id>sign-artifacts</id>
                 <phase>verify</phase>
                 <goals>
                   <goal>sign</goal>
@@ -93,6 +110,6 @@
   </profiles>
 
   <activeProfiles>
-    <activeProfile>nexus</activeProfile>
+    <activeProfile>ossrh</activeProfile>
   </activeProfiles>
 </settings>
