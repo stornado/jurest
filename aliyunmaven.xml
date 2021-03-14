@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <settings xmlns="http://maven.apache.org/SETTINGS/1.1.0"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.1.0 https://maven.apache.org/xsd/settings-1.1.0.xsd">
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.1.0 https://maven.apache.org/xsd/settings-1.1.0.xsd">
 
   <mirrors>
     <!-- https://maven.aliyun.com/mvn/guide -->
@@ -101,7 +102,7 @@
           </snapshots>
         </repository>
         <repository>
-          <id>apache snapshots</id>
+          <id>apache-snapshots</id>
           <url>https://maven.aliyun.com/repository/apache-snapshots</url>
           <releases>
             <enabled>true</enabled>

@@ -4,7 +4,7 @@
 
 ```bash
 cp archetype-catalog.xml ~/.m2/repository/archetype-catalog.xml
-cp settings.xml ~/.m2
+cp aliyunmaven.xml ~/.m2/settings.xml
 ```
 
 ```bash
