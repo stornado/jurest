@@ -14,7 +14,7 @@
     <dependency>
       <groupId>com.zxytech.jurest</groupId>
       <artifactId>jurest</artifactId>
-      <version>1.0-RC1</version>
+      <version>1.0.0</version>
     </dependency>
 
     <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
@@ -48,7 +48,7 @@
       <dependency>
         <groupId>com.zxytech.jurest</groupId>
         <artifactId>jurest-bom</artifactId>
-        <version>1.0-RC1</version>
+        <version>1.0.0</version>
         <type>pom</type>
       </dependency>
 
