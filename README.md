@@ -21,6 +21,21 @@ mvn archetype:generate \
 git clone --depth=1 https://github.com/stornado/jurest-examples.git
 ```
 
+### PMD Check
+
+check your case codes using PMD & CPD
+
+![PMD](./assets/screenshot.pmd.result.png)
+
+![CPD](./assets/screenshot.cpd.result.png)
+
+
+### Cases Result
+
+show your case results using Allure
+
+![Allure](./assets/screenshot.allure.result.png)
+
 ## License
 
 [Apache License](LICENSE)
