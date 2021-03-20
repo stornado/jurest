@@ -39,3 +39,10 @@ show your case results using Allure
 ## License
 
 [Apache License](LICENSE)
+
+## Based On
+
+1. [Junit5](https://github.com/junit-team/junit5)
+2. [Rest Assured](https://github.com/rest-assured)
+3. [Allure](https://github.com/allure-framework)
+4. [PMD](https://github.com/pmd)
