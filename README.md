@@ -1,4 +1,4 @@
-[![Maven Package](https://github.com/stornado/jurest/actions/workflows/maven-publish.yml/badge.svg)](https://github.com/stornado/jurest/actions/workflows/maven-publish.yml)
+[![Maven Package](https://github.com/stornado/jurest/actions/workflows/github-publish.yml/badge.svg)](https://github.com/stornado/jurest/actions/workflows/github-publish.yml)
 
 # JuRest
 
