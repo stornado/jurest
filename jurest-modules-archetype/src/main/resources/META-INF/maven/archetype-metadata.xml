@@ -24,6 +24,8 @@ name="Multi Modules Archetype for JuRest API test framework"
         <include>HELP.md</include>
         <include>mvnw</include>
         <include>mvnw.cmd</include>
+        <include>allure.properties</include>
+        <include>log4j.properties</include>
       </includes>
     </fileSet>
     <fileSet encoding="UTF-8" filtered="true" packaged="false">

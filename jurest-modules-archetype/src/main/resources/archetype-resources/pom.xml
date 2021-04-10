@@ -15,7 +15,7 @@
     <dependency>
       <groupId>com.zxytech.jurest</groupId>
       <artifactId>jurest</artifactId>
-      <version>1.1.1</version>
+      <version>1.1.2</version>
     </dependency>
 
     <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
@@ -49,7 +49,7 @@
       <dependency>
         <groupId>com.zxytech.jurest</groupId>
         <artifactId>jurest-bom</artifactId>
-        <version>1.1.1</version>
+        <version>1.1.2</version>
         <type>pom</type>
       </dependency>
 
@@ -202,36 +202,6 @@
         </configuration>
       </plugin>
 
-      <!-- https://github.com/swagger-api/swagger-codegen/tree/master/modules/swagger-codegen-maven-plugin -->
-      <plugin>
-        <groupId>io.swagger.codegen.v3</groupId>
-        <artifactId>swagger-codegen-maven-plugin</artifactId>
-        <version>3.0.25</version>
-        <executions>
-          <execution>
-            <goals>
-              <goal>generate</goal>
-            </goals>
-            <configuration>
-              <!--Your input swagger spec-->
-              <inputSpec>${project.directory}/swagger.json</inputSpec>
-              <output>${project.build.directory}/generated-sources/swagger</output>
-              <language>java</language>
-              <configOptions>
-                <dateLibrary>java8</dateLibrary>
-              </configOptions>
-              <library>rest-assured</library>
-              <!--Generate 'templates' for tests-->
-              <generateApiTests>true</generateApiTests>
-              <generateApiDocumentation>false</generateApiDocumentation>
-              <generateModelDocumentation>false</generateModelDocumentation>
-              <apiPackage>${default.package}.api</apiPackage>
-              <modelPackage>${default.package}.model</modelPackage>
-              <invokerPackage>${default.package}.handler</invokerPackage>
-            </configuration>
-          </execution>
-        </executions>
-      </plugin>
     </plugins>
   </build>
 

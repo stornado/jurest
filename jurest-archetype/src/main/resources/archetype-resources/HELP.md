@@ -24,7 +24,7 @@ In order to view the report run
 ./mvnw -s settings.xml allure:serve
 ```
 
-Visit report http://localhost:9000/
+Visit report http://localhost:9000/project-reports.html
 
 buid site
 
