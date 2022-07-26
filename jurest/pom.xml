@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
     <groupId>com.zxytech.jurest</groupId>
     <artifactId>jurest-parent</artifactId>
-    <version>1.1.4</version>
+    <version>1.1.5</version>
   </parent>
 
   <artifactId>jurest</artifactId>
-  <version>1.1.4</version>
+  <version>1.1.5</version>
   <packaging>jar</packaging>
 
   <name>JuRest</name>
@@ -20,7 +19,7 @@
     <dependency>
       <groupId>com.zxytech.jurest</groupId>
       <artifactId>jurest-util</artifactId>
-      <version>1.1.4</version>
+      <version>1.1.5</version>
     </dependency>
 
     <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter -->
@@ -183,7 +182,7 @@
       <dependency>
         <groupId>com.zxytech.jurest</groupId>
         <artifactId>jurest-bom</artifactId>
-        <version>1.1.4</version>
+        <version>1.1.5</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>

@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <archetype-catalog xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-catalog/1.0.0 http://maven.apache.org/xsd/archetype-catalog-1.0.0.xsd"
-    xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-catalog/1.0.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-catalog/1.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <archetypes>
     <archetype>
       <groupId>com.zxytech.jurest</groupId>
       <artifactId>jurest-archetype</artifactId>
-      <version>1.1.4</version>
+      <version>1.1.5</version>
       <description>基于 (Ju)ni5 + All(ure) + (Rest) Assured 实现接口测试</description>
     </archetype>
     <archetype>
       <groupId>com.zxytech.jurest</groupId>
       <artifactId>jurest-modules-archetype</artifactId>
-      <version>1.1.4</version>
+      <version>1.1.5</version>
       <description>基于 (Ju)ni5 + All(ure) + (Rest) Assured 实现接口测试</description>
     </archetype>
   </archetypes>

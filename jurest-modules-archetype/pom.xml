@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
     <groupId>com.zxytech.jurest</groupId>
     <artifactId>jurest-parent</artifactId>
-    <version>1.1.4</version>
+    <version>1.1.5</version>
   </parent>
 
   <artifactId>jurest-modules-archetype</artifactId>
-  <version>1.1.4</version>
+  <version>1.1.5</version>
   <packaging>maven-archetype</packaging>
 
   <build>
@@ -26,20 +25,24 @@
     <pluginManagement>
       <plugins>
         <plugin>
+          <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-archetype-plugin -->
           <artifactId>maven-archetype-plugin</artifactId>
-          <version>3.1.2</version>
+          <version>3.2.1</version>
         </plugin>
         <plugin>
+          <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-deploy-plugin -->
           <artifactId>maven-deploy-plugin</artifactId>
-          <version>2.7</version>
+          <version>3.0.0</version>
         </plugin>
         <plugin>
+          <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-install-plugin -->
           <artifactId>maven-install-plugin</artifactId>
-          <version>2.4</version>
+          <version>3.0.1</version>
         </plugin>
         <plugin>
+          <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-resources-plugin -->
           <artifactId>maven-resources-plugin</artifactId>
-          <version>2.6</version>
+          <version>3.2.0</version>
         </plugin>
       </plugins>
     </pluginManagement>
