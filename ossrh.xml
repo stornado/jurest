@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <settings xmlns="http://maven.apache.org/SETTINGS/1.1.0"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.1.0 https://maven.apache.org/xsd/settings-1.1.0.xsd">
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.1.0 https://maven.apache.org/xsd/settings-1.1.0.xsd">
 
   <!-- https://issues.sonatype.org/browse/OSSRH-65498 -->
   <!-- https://central.sonatype.org/pages/ossrh-guide.html#deployment -->
@@ -19,14 +18,14 @@
     <profile>
       <id>ossrh</id>
       <properties>
-        <altDeploymentRepository>ossrh::default::https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</altDeploymentRepository>
+        <altDeploymentRepository>ossrh::https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</altDeploymentRepository>
       </properties>
       <build>
         <plugins>
           <plugin>
             <groupId>org.sonatype.plugins</groupId>
             <artifactId>nexus-staging-maven-plugin</artifactId>
-            <version>1.6.7</version>
+            <version>1.6.13</version>
             <extensions>true</extensions>
             <configuration>
               <serverId>ossrh</serverId>
@@ -36,12 +35,12 @@
           </plugin>
 
           <plugin>
+            <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-gpg-plugin -->
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-gpg-plugin</artifactId>
-            <version>1.6</version>
+            <version>3.2.3</version>
             <configuration>
               <keyname>${gpg.keyname}</keyname>
-              <passphrase>${gpg.passphrase}</passphrase>
             </configuration>
             <executions>
               <execution>
@@ -56,12 +55,12 @@
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-release-plugin</artifactId>
-            <version>3.0.0-M1</version>
+            <version>3.0.1</version>
           </plugin>
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-source-plugin</artifactId>
-            <version>3.2.1</version>
+            <version>3.3.1</version>
             <executions>
               <execution>
                 <phase>package</phase>
@@ -74,7 +73,7 @@
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-javadoc-plugin</artifactId>
-            <version>3.2.0</version>
+            <version>3.6.3</version>
             <configuration>
               <show>private</show>
               <nohelp>true</nohelp>
@@ -94,7 +93,7 @@
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-compiler-plugin</artifactId>
-            <version>3.8.1</version>
+            <version>3.13.0</version>
             <configuration>
               <source>1.8</source>
               <target>1.8</target>
