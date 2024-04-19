@@ -52,7 +52,7 @@
     <url>https://github.com/stornado/jurest/tree/main</url>
   </scm>
 
-  <build>
+  <!-- <build>
     <plugins>
       <plugin>
         <groupId>org.sonatype.plugins</groupId>
@@ -136,6 +136,6 @@
         </configuration>
       </plugin>
     </plugins>
-  </build>
+  </build> -->
 
 </project>
