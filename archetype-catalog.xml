@@ -6,13 +6,13 @@
     <archetype>
       <groupId>com.zxytech.jurest</groupId>
       <artifactId>jurest-archetype</artifactId>
-      <version>1.1.5</version>
+      <version>1.1.6</version>
       <description>基于 (Ju)ni5 + All(ure) + (Rest) Assured 实现接口测试</description>
     </archetype>
     <archetype>
       <groupId>com.zxytech.jurest</groupId>
       <artifactId>jurest-modules-archetype</artifactId>
-      <version>1.1.5</version>
+      <version>1.1.6</version>
       <description>基于 (Ju)ni5 + All(ure) + (Rest) Assured 实现接口测试</description>
     </archetype>
   </archetypes>
